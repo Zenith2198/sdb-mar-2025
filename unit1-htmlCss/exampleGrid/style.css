@@ -1,0 +1,14 @@
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 5px;
+}
+
+.grid > * {
+	aspect-ratio: 1/1;
+	background-color: lightgreen;
+	border: 2px solid black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
