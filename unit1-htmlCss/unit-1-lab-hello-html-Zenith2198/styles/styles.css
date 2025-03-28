@@ -1,0 +1,54 @@
+html {
+	/* flex properties */
+	display: flex;
+	flex-direction: column;
+	/* style properties */
+	min-height: 100vh;
+}
+
+body {
+	/* flex properties */
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 10px;
+	/* style properties */
+	margin: 0;
+	padding: 25px 50px;
+}
+
+main {
+	/* flex child properties */
+	flex-grow: 1;
+	/* style properties */
+	background-color: lightgray;
+	border: 2px solid black;
+	padding: 20px;
+}
+
+header {
+	/* style properties */
+	background-color: lightgray;
+	border: 2px solid black;
+	padding: 10px 50px;
+	margin: 0 100px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+nav {
+	/* flex properties */
+	display: flex;
+	justify-content: space-evenly;
+	/* style properties */
+	background-color: lightgray;
+	border: 2px solid black;
+	padding: 5px;
+}
+
+footer {
+	/* style properties */
+	background-color: lightgray;
+	border: 2px solid black;
+	padding: 5px;
+}
