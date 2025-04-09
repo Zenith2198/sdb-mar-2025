@@ -1,0 +1,10 @@
+goal: Write a recursive function that accepts a number, and will count up to that number in fizzbuzz. Fizzbuzz: https://en.wikipedia.org/wiki/Fizz_buzz
+
+code:
+function fizzbuzz(numToCountTo, currNum = 1) {
+	exit condition, exit if currNum is greater than numToCountTo
+
+	if/else block to follow rules of fizzbuzz, using currNum
+
+	increment currNum and call on ourself/recurse
+}
