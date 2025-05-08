@@ -1,0 +1,70 @@
+html {
+	height: 100vh;
+}
+
+body {
+	margin: 0;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+h1, h2 {
+	margin: 0;
+}
+
+header {
+	background-color: red;
+	display: flex;
+	align-items: center;
+	gap: 15px;
+}
+
+.homeLink {
+	text-decoration: none;
+	color: black;
+	padding: 5px;
+	position: relative;
+}
+
+.homeLink:hover {
+	background-color: darkred;
+}
+
+.tooltip {
+	visibility: hidden;
+	position: absolute;
+	background-color: lightblue;
+	padding: 5px;
+}
+
+.homeLink:hover .tooltip {
+	visibility: visible;
+}
+
+main {
+	margin: 10px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	flex-grow: 1;
+}
+
+footer {
+	background-color: red;
+	padding: 5px;
+}
+
+#pokeHeader {
+	display: flex;
+	align-items: baseline;
+	gap: 10px;
+}
+
+.pokeHeader {
+	border-bottom: 2px solid black;
+}
+
+#sprite {
+	width: 100%;
+	height: auto;
+}

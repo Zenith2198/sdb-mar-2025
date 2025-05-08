@@ -1,0 +1,22 @@
+#grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1px;
+}
+
+.header {
+	background-color: pink;
+	padding: 5px;
+	text-align: center;
+	border: 1px solid black;
+	border-bottom: 2px solid black;
+}
+
+.letter {
+	background-color: lightgreen;
+	padding: 5px;
+	text-align: center;
+	border: 1px solid black;
+	cursor: pointer;
+	user-select: none;
+}

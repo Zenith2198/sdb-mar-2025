@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PokeAPI Frontend</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<a href="/" class="homeLink">
+			<h1>PokeAPI</h1>
+			<span class="tooltip">Click here to refresh!</span>
+		</a>
+		<form id="searchForm">
+			<input name="searchInput" id="searchInput" placeholder="Search">
+			<button>Submit</button>
+			<label for="searchInput"></label>
+		</form>
+	</header>
+
+	<main>
+		<div class="stats">
+			<div id="pokeHeader">
+				<h1 id="name"></h1>
+				<h2 id="id"></h2>
+			</div>
+			<div id="height"></div>
+			<div id="weight"></div>
+		</div>
+		<img id="sprite">
+	</main>
+
+	<footer>Some footer text</footer>
+
+	<script src="index.js"></script>
+</body>
+</html>
