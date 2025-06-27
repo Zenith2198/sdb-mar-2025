@@ -5,6 +5,7 @@ import User from "./models/User.js";
 import jwt from "jsonwebtoken";
 import bcrypt from "bcrypt";
 import validateSession from "./middlewares/validateSession.js";
+import cors from "cors";
 
 mongoose.connect(process.env.DATABASE_URL);
 const db = mongoose.connection;
@@ -16,6 +17,7 @@ db.once("open", () => {
 const app = express();
 
 app.use(express.json());
+app.use(cors());
 
 app.post("/signUp", async (req, res) => {
 	try {
@@ -35,7 +37,7 @@ app.post("/signUp", async (req, res) => {
 		res.json({ message: "Sign up successful", sessionToken });
 	} catch (err) {
 		console.log(err);
-		res.json({error: "An error occurred"});
+		res.status(400).json({error: "An error occurred"});
 	}
 
 });
